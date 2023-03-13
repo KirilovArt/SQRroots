@@ -15,11 +15,11 @@ public class SqrServiceTest {
 //            "1,-100,100"
 //    })
     @CsvFileSource(files = "src/test/resources/counter.csv")
-    public void testSqrcounter( int expected, int x, int y){
+    public void testSqrcounter(int expected, int lowervalue, int uppervalue) {
         SqrService service = new SqrService();
 
-        int actual = service.calcSqr(x, y);
-        Assertions.assertEquals(expected,actual);
+        int actual = service.calcSqr(lowervalue, uppervalue);
+        Assertions.assertEquals(expected, actual);
     }
 
 }

@@ -6,9 +6,8 @@ public class SqrService {
         for (int i = 10; i <= 999; i++) {
             if ((i * i >= lowervalue) & (i * i <= uppervalue)) {
                 result = result + 1;
-                // Рассширил значения для тестов.
             }
         }
-                return result;
+        return result;
     }
 }
